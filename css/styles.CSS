@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-image: url(../img/niECRYX.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu{
+    color: blanchedalmond;
+}
+.header{
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.menuPrincipal{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 80px;
+    gap: 100px;
+    justify-content: space-around;
+}
+.menu{
+    font-size: 30px;
+    font-family: 'Black Ops One', cursive;
+}
+a{
+    color: rgba(236, 228, 165, 0.616);
+}
+img.logoUser{
+    left: 20px;
+    position: relative;
+}
+.form{
+    background-color: white;
+}
+.contenedorSingin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 10px;
+    left: 80px;
+}
+main{
+    color: white;
+}
+.mainVideo{
+    margin-left: 50px;
+   margin-top: 40px;
+}
+.mainP{
+    font-family:'Allerta', sans-serif;
+    max-width: 100vh;
+    position: relative;
+    left: 800px;
+    bottom: 200px;
+
+}
+.MainP{
+    font-family:'Allerta', sans-serif;
+    max-width: 100vh;
+    position: relative;
+    left: 800px;
+    bottom: 200px;
+}
+.imgIngame{
+    position: relative;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+footer{
+    background-color: black;
+    font-family:'Allerta', sans-serif;
+    color: rgba(236, 228, 165, 0.616);
+    height: 120px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.menuFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    gap: 100px;
+}
+.footerSocial{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 50px;
+    position: relative;
+    left: 100px;
+}
+
+/*factions*/
+
+.mainPortrait{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 50px;
+}
+.portraitInfo{
+    font-family:'Allerta', sans-serif;
+    display: flex;
+    position: relative;
+    left: 120px;
+    margin-top: 30px;
+    max-width: 180vh;
+    gap: 110px;
+}
+
+/*traders*/
+.traders{
+    margin-top: 50px;
+    margin: 30px;
+}
+.tradersLore{
+    font-family:'Allerta', sans-serif;
+    max-width: 100vh;
+    position: relative;
+    left: 800px;
+    bottom: 200px;
+
+}
+
+/*bosses*/
+.bosses{
+    margin-top: 50px;
+    margin: 30px;
+}
+.bossRight{
+    position: relative;
+    left: 1200px;
+}
+.bossesLore{
+    font-family:'Allerta', sans-serif;
+    max-width: 100vh;
+    position: relative;
+    left: 800px;
+    bottom: 250px;
+}
+.bossesLoreRight{
+    font-family:'Allerta', sans-serif;
+    max-width: 100vh;
+    position: relative;
+    bottom: 230px;
+    left: 50px;
+}
+/*gear*/
+.videoGear{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.videoText{
+    display: flex;
+    text-align: left;
+    font-family:'Allerta', sans-serif;
+    max-width: 120vh;
+    position: relative;
+    left: 650px;
+    bottom: 200px;
+}
+.imgGear{
+    margin: 40px;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 50px;
+}
+.imgText{
+    font-family:'Allerta', sans-serif;
+    max-width: 120vh;
+    position: relative;
+    left: 700px;
+    bottom: 230px;
+}
+
+/*map*/
+.map{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.mapTitle{
+    font-family:'Allerta', sans-serif;
+    position: relative;
+    left:500px;
+    margin-top: 50px;
+
+}
