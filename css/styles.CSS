@@ -23,6 +23,7 @@ html{
     left: 80px;
     gap: 100px;
     justify-content: space-around;
+    display: none;
 }
 .menu{
     font-size: 30px;
