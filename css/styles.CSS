@@ -1,102 +1,151 @@
+/* reset */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* estilos generales */
+
 html{
     background-image: url(../img/niECRYX.png);
     background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     background-size: cover;
 }
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+    gap: 0.5rem 0.5rem;
+}
+
+/* estilos de header */
+
+header{
+    grid-area: header;
+}
+
 .menu{
     color: blanchedalmond;
+    font-size: 2rem;
+    font-family: 'Black Ops One', cursive;
+    text-shadow: 1px 1px 5px rgb(196, 139, 61);
 }
+
 .header{
     background-color: black;
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 1px 1px 5px rgba(255, 255, 0, 0.678);
 }
+
 .menuPrincipal{
     display: flex;
     align-items: center;
-    position: relative;
-    left: 80px;
-    gap: 100px;
-    justify-content: space-around;
-    display: none;
+    gap: 7rem;
 }
-.menu{
-    font-size: 30px;
-    font-family: 'Black Ops One', cursive;
+
+.logoUser{
+    display: flex;
+    justify-content: right;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    float: right;
 }
+
 a{
     color: rgba(236, 228, 165, 0.616);
 }
-img.logoUser{
-    left: 20px;
-    position: relative;
-}
+
 .form{
     background-color: white;
 }
+
 .contenedorSingin{
-    display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    bottom: 10px;
-    left: 80px;
+    bottom: 0.6rem;
+    left: 5rem;
 }
-main{
-    color: white;
-}
-.mainVideo{
-    margin-left: 50px;
-   margin-top: 40px;
-}
-.mainP{
-    font-family:'Allerta', sans-serif;
-    max-width: 100vh;
-    position: relative;
-    left: 800px;
-    bottom: 200px;
 
+/* estilos de main */
+
+main{
+    grid-area: main;
 }
-.MainP{
+
+main div img{
+    margin-top: 0.3rem;
+    box-shadow: 0.5px 0.5px 5px darkgoldenrod;
+}
+
+.mainVideo{
+    grid-area: video;
+    margin-left: 5rem;
+    margin-top: 5rem;
+    padding: rem;
+    box-shadow: 1px 1px 5px darkgoldenrod;
+}
+
+.mainP{
+    grid-area: textoVideo;
     font-family:'Allerta', sans-serif;
+    color: white;
     max-width: 100vh;
     position: relative;
-    left: 800px;
-    bottom: 200px;
+    left: 50rem;
+    bottom: 14rem;
+    padding: 1rem;
 }
-.imgIngame{
+
+.MainP{
+    grid-area: textoImg;
+    font-family:'Allerta', sans-serif;
+    color: white;
+    max-width: 100vh;
     position: relative;
-    margin-top: 40px;
-    margin-left: 50px;
+    left: 50rem;
+    bottom: 14rem;
+    padding: 1rem;
 }
+
+.imgIngame{
+    grid-area: img;
+    position: relative;
+    margin-left: 5rem;
+    margin-top: 5rem;
+    box-shadow: 1px 1px 5px darkgoldenrod;
+}
+
+/* estilos de footer */
+
 footer{
+    grid-area: footer;
     background-color: black;
     font-family:'Allerta', sans-serif;
     color: rgba(236, 228, 165, 0.616);
-    height: 120px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    height: 8rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
-.menuFooter{
+
+footer div ul{
+    list-style: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 10px;
-    gap: 100px;
-}
-.footerSocial{
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    gap: 50px;
-    position: relative;
-    left: 100px;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin: 2rem;
 }
 
 /*factions*/
@@ -104,26 +153,42 @@ footer{
 .mainPortrait{
     display: flex;
     justify-content: center;
-    gap: 200px;
-    margin-top: 50px;
+    gap: 13rem;
+    margin-top: 4rem;
 }
+
+.imgBear{
+    width: 20%;
+}
+
+.imgUsec{
+    width: 20%;
+}
+
+.imgSkav{
+    width: 20%;
+}
+
+
 .portraitInfo{
     font-family:'Allerta', sans-serif;
-    display: flex;
-    position: relative;
-    left: 120px;
-    margin-top: 30px;
-    max-width: 180vh;
-    gap: 110px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin: 2rem;
 }
 
 /*traders*/
+
 .traders{
     margin-top: 50px;
     margin: 30px;
 }
+
 .tradersLore{
     font-family:'Allerta', sans-serif;
+    color: white;
     max-width: 100vh;
     position: relative;
     left: 800px;
@@ -132,34 +197,45 @@ footer{
 }
 
 /*bosses*/
+
 .bosses{
     margin-top: 50px;
     margin: 30px;
 }
+
 .bossRight{
     position: relative;
+    color: white;
     left: 1200px;
 }
+
 .bossesLore{
     font-family:'Allerta', sans-serif;
+    color: white;
     max-width: 100vh;
     position: relative;
     left: 800px;
     bottom: 250px;
 }
+
 .bossesLoreRight{
     font-family:'Allerta', sans-serif;
+    color: white;
     max-width: 100vh;
     position: relative;
     bottom: 230px;
     left: 50px;
 }
+
 /*gear*/
+
 .videoGear{
     margin-top: 50px;
     margin-left: 50px;
 }
+
 .videoText{
+    color: white;
     display: flex;
     text-align: left;
     font-family:'Allerta', sans-serif;
@@ -168,14 +244,17 @@ footer{
     left: 650px;
     bottom: 200px;
 }
+
 .imgGear{
     margin: 40px;
     margin-bottom: 20px;
     position: relative;
     bottom: 50px;
 }
+
 .imgText{
     font-family:'Allerta', sans-serif;
+    color: white;
     max-width: 120vh;
     position: relative;
     left: 700px;
@@ -183,6 +262,7 @@ footer{
 }
 
 /*map*/
+
 .map{
     display: flex;
     justify-content: center;
@@ -191,6 +271,7 @@ footer{
 }
 .mapTitle{
     font-family:'Allerta', sans-serif;
+    color: white;
     position: relative;
     left:500px;
     margin-top: 50px;
